@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Qrome Extension",
-  "version": "0.1",
+  "name": "Darqxposure Therapy",
+  "short_name": "DARQ",
+  "version": "0.0.0.2",
   "content_scripts": [
     {
       "matches": [
