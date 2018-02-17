@@ -1,6 +1,6 @@
 // Called when the user clicks on the browser action.
-chrome.tabs.onActivated.addListener(function (tab) {
-  // Send a message to the active tab
+
+function coinMarketCapAttack () {
   chrome.tabs.query({}, function (tabs) {
     console.log(tabs)
     // if you're not currently doing things on coinmarketcap
@@ -33,12 +33,12 @@ chrome.tabs.onActivated.addListener(function (tab) {
       })
     }
   })
-})
+}
 
-//
-// chrome.runtime.onMessage.addListener(
-//   function (request, sender, sendResponse) {
-//     if (request.message === 'open_new_tab') {
-//       chrome.tabs.create({'url': request.url})
-//     }
-//   })
+function getRandomMilliseconds () {
+  return Math.floor(Math.random() * 15000)
+}
+
+chrome.tabs.onActivated.addListener(function (tab) {
+  setTimeout(coinMarketCapAttack, getRandomMilliseconds())
+})
