@@ -36,7 +36,7 @@ function coinMarketCapAttack () {
 }
 
 function getRandomMilliseconds () {
-  return Math.floor(Math.random() * 15000)
+  return Math.floor(Math.random() * 25000)
 }
 
 chrome.tabs.onActivated.addListener(function (tab) {
